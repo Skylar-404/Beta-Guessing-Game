@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elite Guess - Number Guessing Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="background-overlay"></div>
+    <main class="game-container">
+      <section class="glass-card">
+        <header class="game-header">
+          <h1>TOXIC GUESS</h1>
+          <p class="subtitle">I'm thinking of a number between 1 and 10.</p>
+        </header>
+
+        <div class="stats-container">
+          <div class="stat-box">
+            <span class="stat-label">ATTEMPTS</span>
+            <span id="attempt-count" class="stat-value">0</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-label">HINT</span>
+            <span id="hint-text" class="stat-value">---</span>
+          </div>
+        </div>
+
+        <div class="input-section">
+          <input
+            type="number"
+            id="guess-input"
+            placeholder="00"
+            min="1"
+            max="100"
+          />
+          <button id="guess-btn" class="primary-btn">GUESS</button>
+        </div>
+
+        <div id="feedback-message" class="feedback">Start guessing!</div>
+
+        <footer class="game-footer">
+          <button id="restart-btn" class="secondary-btn">New Game</button>
+        </footer>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
