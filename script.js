@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     attemptDisplay.textContent = "0";
     hintDisplay.textContent = "---";
-    feedback.textContent = "Start guessing!";
+    feedback.textContent = "Teay Mok!";
     feedback.style.color = "var(--secondary)";
     guessInput.value = "";
     guessInput.disabled = false;
